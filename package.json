@@ -1,0 +1,47 @@
+{
+  "name": "@panhezeng/rename-webpack-plugin",
+  "description": "rename-webpack-plugin",
+  "version": "1.0.0",
+  "author": "潘何增 <panhezeng@gmail.com> (http://apsay.com/)",
+  "contributors": [
+    "dcatfly <dcatfly@gmail.com> (https://github.com/Dcatfly/rename-webpack-plugin)"
+  ],
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "rename",
+    "naming convention",
+    "webpack plugin",
+    "javascript"
+  ],
+  "homepage": "https://github.com/panhezeng/rename-webpack-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panhezeng/rename-webpack-plugin.git"
+  },
+  "files": [
+    "dist",
+    "src",
+    "package.json",
+    "README"
+  ],
+  "main": "dist/rename-webpack-plugin.min.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "change-case": "latest"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^2.1.5"
+  },
+  "engines": {
+    "node": "> 8.0.0",
+    "npm": "> 5.0.0"
+  }
+}
