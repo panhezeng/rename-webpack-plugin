@@ -1,8 +1,7 @@
 module.exports = {
   output: {
     filename: 'rename-webpack-plugin.min.js',
-    libraryTarget: 'umd',
-    umdNamedDefine: true,
+    libraryTarget: 'commonjs2',
     library: 'RenameWebpackPlugin',
     libraryExport: 'RenameWebpackPlugin'
   },
