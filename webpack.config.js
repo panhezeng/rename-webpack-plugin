@@ -5,9 +5,9 @@ module.exports = {
     library: 'RenameWebpackPlugin',
     libraryExport: 'RenameWebpackPlugin'
   },
-  externals: {
-    'change-case': 'change-case'
-  },
+  externals: [
+    'change-case'
+  ],
   module: {
     rules: [
       {

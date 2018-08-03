@@ -25,19 +25,21 @@ export class RenameWebpackPlugin {
           if (p1 && !new RegExp(p1).test(fileName)) {
             return
           }
-          console.log()
+          let name
           if (naming) {
             const array = fileName.split('.')
-            let name = changeCase[naming](array.shift())
+            name = changeCase[naming](array.shift())
             if (array.length && array[0]) {
               name += '.'
             }
             name += array.join('.')
-            assets[name] = assets[fileName]
           } else {
-            assets[fileName.replace(p1, p2)] = assets[fileName]
+            name = fileName.replace(p1, p2)
           }
-          delete assets[fileName]
+          if (name !== fileName) {
+            assets[name] = assets[fileName]
+            delete assets[fileName]
+          }
         })
       }
 
