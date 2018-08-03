@@ -1,6 +1,6 @@
 import changeCase from 'change-case'
 
-export default class RenameWebpackPlugin {
+export class RenameWebpackPlugin {
   /**
    * options {naming, p1, p2} naming for changeCase[naming](str)  p1, p2 for str.replace(regexp|substr, newSubstr|function)
    * @param options

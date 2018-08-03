@@ -2,9 +2,9 @@ module.exports = {
   output: {
     filename: 'rename-webpack-plugin.min.js',
     libraryTarget: 'umd',
-    globalObject: 'this',
+    umdNamedDefine: true,
     library: 'RenameWebpackPlugin',
-    umdNamedDefine: true
+    libraryExport: 'RenameWebpackPlugin'
   },
   externals: {
     'change-case': 'change-case'
