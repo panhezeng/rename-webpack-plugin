@@ -1,7 +1,7 @@
 {
   "name": "@panhezeng/rename-webpack-plugin",
   "description": "rename-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "潘何增 <panhezeng@gmail.com> (http://apsay.com/)",
   "contributors": [
     "dcatfly <dcatfly@gmail.com> (https://github.com/Dcatfly/rename-webpack-plugin)"
