@@ -31,3 +31,8 @@ module.exports = {
 ## 感谢
 
 "dcatfly <dcatfly@gmail.com> (https://github.com/Dcatfly/rename-webpack-plugin)"
+
+
+# 发版
+npm version patch
+npm publish --access public
