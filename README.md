@@ -34,5 +34,4 @@ module.exports = {
 
 
 # 发版
-npm version patch
-npm publish --access public
+npm version patch && npm publish --access public
