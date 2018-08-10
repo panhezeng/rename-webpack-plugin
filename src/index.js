@@ -13,7 +13,21 @@ export class RenameWebpackPlugin {
 
     const emit = (compilation, callback) => {
 
-      const {naming, p1, p2} = this.options
+      let naming
+      let p1
+      let p2
+
+      if (Object.prototype.toString.call(this.options) === '[object Object]') {
+        if (this.options.naming) {
+          naming = this.options.naming
+        }
+        if (this.options.p1) {
+          naming = this.options.p1
+        }
+        if (this.options.p2) {
+          naming = this.options.p2
+        }
+      }
 
       // 如果是naming convention模式或者自定义替换模式
       if (naming || (p1 && p2)) {
